@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(58, 17, 58);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden
+        }
+
+        .container{
+            height: 75%;
+            width: 75%;
+            background-color: white;
+            border-radius: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+
+        .titulo{
+            display: flex;
+            align-items: start;
+            width: 100%;
+            border-bottom: 1px solid gray;
+            padding: 30px;
+            margin: 5px 0px 0px 0px
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .comeco{
+            display: flex;
+            height: 20%;
+            width: 242%;
+            align-items: start;
+            gap: 20px;
+            margin: 5px 0px 0px 0px;
+            padding: 30px
+        }
+        #email, #nome{
+            height: 50px;
+            width: 400px;
+        }
+
+        #assunto{
+            height: 50px;
+            width: 840px;
+        }
+        
+        .assunto{
+            display: flex;
+            height: 20%;
+            width: 103%;
+            align-items: center;
+            margin: 5px 0px 0px 0px;
+            gap: 50px;
+        }
+
+        #mensagem{
+            width: 840px;
+            margin: 0px 0px 0px 50px
+        }
+
+        button{
+            width: 15%;
+            height: 10%;
+            margin: 20px 0px 0px 50px;
+            color: white;
+            background-color: rgb(87, 7, 87);
+        }
+
+        input, textarea{
+            padding: 10px
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="titulo">
+            <h2>Envie sua mensagem</h2>
+        </div>
+        
+        <form action="" method="get" class="form">
+
+            <div class="comeco">
+                <label for="nome"></label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome">
+
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail"> <br>
+            </div>
+
+            <div class="assunto">
+                <label for="assunto"></label>
+                <input type="text" id="assunto" name="assunto" placeholder="Assunto"> <br>
+            </div>
+
+            <div class="mensagem">
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea> <br>
+            </div>
+
+            <button type="submit">
+                <span>Enviar Mensagem</span>
+            </button>
+        </form>
+    </div>
+</body>
+</html>
