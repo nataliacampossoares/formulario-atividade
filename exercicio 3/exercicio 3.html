@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        
+    @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:wght@100;300&display=swap');
+
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background-color: lightgray;
+        }
+        .container{
+            display: flex;
+            height: 90%;
+            width: 90%;
+            border-radius: 10px;
+        }
+
+        .primeira_coluna{
+            display: flex;
+            height: 100%;
+            width: 45%;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(16, 165, 120, 0.829);
+            justify-content: center;
+            gap: 20px;
+            border-radius: 30px 0px 0px 30px;
+        }
+
+        #welcome, .descricao{
+            color: white;
+            font-family: "Poppins";
+        }
+
+        #welcome{
+            font-weight: bold;
+            font-size: 40px
+        }
+
+        .button{
+            border-radius: 100px;
+            width: 150px;
+            height: 40px;
+            font-weight: bold;
+        }
+
+        #sign_in{
+            border-color: white;
+            color:white;
+            background-color: rgba(16, 165, 120, 0.829);
+        }
+
+        #sign_in:hover{
+            background-color: white;
+            color: rgba(16, 165, 120, 0.829);
+            border-color: rgba(16, 165, 120, 0.829);
+        }
+
+        .segunda_coluna{
+            display: flex;
+            height: 100%;
+            width: 55%;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            justify-content: center;
+            gap: 20px;
+            border-radius: 0px 30px 30px 0px;
+        }
+
+        #sign_up{
+            border-color: rgba(16, 165, 120, 0.829);
+            color: rgba(16, 165, 120, 0.829);
+            background-color: white;
+            margin: 0px 0px 0px 100px
+        }
+
+        #sign_up:hover{
+            border-color: white;
+            color:white;
+            background-color: rgba(16, 165, 120, 0.829);
+        }
+
+        img{
+            height: 70px;
+            width: 90px
+        }
+
+        ul{
+            display: flex;
+            direction: row
+        }
+
+        #create{
+            font-weight: bold;
+            font-size: 40px;
+            color: rgba(16, 165, 120, 0.829);
+            font-family: "Poppins";
+        }
+
+        p{
+            color: gray;
+            font-family: "Poppins";
+        }
+
+        input{
+            background-color: #ecf0f1;
+            height: 45px;
+            border: none;
+            width: 300px;
+            margin: 8px
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="primeira_coluna">
+            <h2 class="title" id="welcome">Welcome Back!</h2>
+            <p class="descricao">To keep conect with us</p>
+            <p class="descricao">please login with your personal info</p>
+            <button class="button" id="sign_in">SIGN IN</button>
+        </div>
+        <div class="segunda_coluna">
+            <h2 class="title" id="create">Create Acount</h2>
+            <div class="socialmedia">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <p>or use your e-mail for registration:</p>
+            <form class="form">
+                <label for="name">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Name">
+                </label>
+                <br> <br>
+
+                <label for="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="E-mail">
+                </label>
+                <br> <br>
+
+                <label for="senha">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </label>
+                <br> <br>
+
+                <button class="button" id="sign_up">SIGN UP</button>
+            </form>
+        </div> 
+    </div>
+    
+</body>
+</html>
